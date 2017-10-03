@@ -92,4 +92,3 @@ ENV/
 .idea/
 
 .DS_Store
-frozen_models/

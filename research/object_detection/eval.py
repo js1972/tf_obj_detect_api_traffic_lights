@@ -56,6 +56,11 @@ from object_detection.protos import model_pb2
 from object_detection.protos import pipeline_pb2
 from object_detection.utils import label_map_util
 
+# JASON EDIT - Don't use GPU for eval
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+# END JASON EDIT
+
 tf.logging.set_verbosity(tf.logging.INFO)
 
 flags = tf.app.flags
